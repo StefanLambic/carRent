@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400&display=swap");
+
+/*VARIABLE*/
+:root {
+  --primary: #1d527c;
+  --orange: #fd7f45;
+  --darkGray: #3c3b3c;
+  --lightGray: #d3d3d3;
+  --white: #fff;
+  --transition: 0.3s ease;
+  --padding: 100px 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: var(--darkGray);
+  line-height: 1.6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*HEADER*/
+button {
+  padding: 15px 40px;
+  border: 1px solid var(--white);
+  background: transparent;
+  color: var(--white);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+button:hover {
+  cursor: pointer;
+  background: var(--white);
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+.headings {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.headings::after {
+  display: block;
+  height: 1px;
+  width: 100px;
+  background: var(--primary);
+  margin: 10px 0 20px 0;
+}
+
+/*NAVIGATION*/
+nav {
+  background: linear-gradient(to right, var(--orange), var(--primary));
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+}
+nav ul {
+  display: flex;
+}
+nav a {
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 0 30px;
+  letter-spacing: 2px;
+}
+nav a:hover {
+  color: var(--lightGray);
+}
+.logo {
+  font-size: 2rem;
+}
+
+/*HEADER*/
+header {
+  background-image: linear-gradient(
+      rgba(40, 52, 61, 0.8),
+      rgba(29, 26, 25, 0.8)
+    ),
+    url(img/header.jpg);
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+header p {
+  font-size: 1.2rem;
+  padding: 30px;
+}
+
+/*ABOUT*/
+.about {
+  padding: var(--padding);
+  display: flex;
+  flex-wrap: wrap;
+}
+.about img {
+  width: 100%;
+  box-shadow: 10px 10px var(--primary);
+}
+.about article {
+  flex: 1;
+}
+.about article:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about p {
+  padding-right: 50px;
+  text-align: justify;
+}
+/*SECTION*/
+
+.three {
+  padding: 100px 0;
+}
+.team {
+  font-weight: 700;
+}
+.h2t {
+  font-size: 46px;
+  color: var(--primary);
+}
+
+.h2p {
+  font-size: 36px;
+  color: var(--darkGray);
+}
+.three article {
+  float: left;
+  width: 33%;
+}
+.three .wrapper {
+  margin: 50px;
+  border: 1px solid var(--darkGray);
+  border-radius: 5;
+}
+.three .text {
+  padding: 23px;
+  line-height: 1.7;
+  text-align: justify;
+}
+.three h3 {
+  color: var(--primary);
+}
+.three .img1 {
+  background-image: url(img/team1.jpg);
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+.three .img2 {
+  background-image: url(img/team2.jpg);
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+.three .img3 {
+  background-image: url(img/team3.jpg);
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+
+/*FOOTER*/
+footer {
+  background: var(--white);
+  padding: var(--padding);
+}
+.footer-container {
+  width: 50%;
+  margin: auto;
+}
+footer h2 {
+  color: var(--darkGray);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+footer label,
+footer input,
+footer textarea {
+  display: block;
+  width: 100%;
+  color: var(--darkGray);
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+}
+footer input,
+footer textarea {
+  background: rgba(32, 30, 30, 0.2);
+}
+::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+footer .row:nth-child(3) {
+  text-align: center;
+}
+footer .row:nth-child(3) a {
+  color: var(--primary);
+  background: var(--white);
+  margin: 0 20px;
+  font-size: 2rem;
+  padding: 20px;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  border-radius: 50%;
+}
+footer .row:nth-child(3) a i {
+  position: relative;
+  top: -10px;
+}
+footer button {
+  border: 3px solid black;
+  color: var(--darkGray);
+  display: block;
+  margin: 30px auto;
+  font-weight: 500;
+}
