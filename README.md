@@ -1,3 +1,4 @@
-# carRenting
-Static Website
-Single-page website for renting a car. Built with HTML & CSS.
+- The name of this project is carRent.
+- A car-renting website in which potential customers are able to find informations about renting cars in their area with the pictures and names of the most "well known" employees in the company.
+- The whole project was built using exclusively HTML5 and CSS3. 
+- While making this project i had the opportunity to improve my CSS3 skills. 
